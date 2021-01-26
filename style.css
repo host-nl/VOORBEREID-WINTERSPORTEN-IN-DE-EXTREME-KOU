@@ -1,0 +1,26 @@
+h1.splitting {
+  color: #84a8ff;
+}
+h1.splitting .char {
+  transition: transform 0.3s cubic-bezier(0.3, 0, 0.3, 1), opacity 0.3s linear;
+  transition-delay: calc( 20ms * var(--char-index) );
+}
+h1.splitting[data-scroll=out] .char {
+  opacity: 0.1;
+  transform: translateY(0.25em);
+}
+
+/* ---------------------------------- */
+html, body {
+  background: #ffff;
+}
+
+body {
+  color: rgb(70, 70, 71);
+}
+
+.page {
+  max-width: 35em;
+  margin: auto;
+  overflow: hidden;
+}
